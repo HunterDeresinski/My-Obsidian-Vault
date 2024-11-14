@@ -5,3 +5,4 @@
 - [ ] Renew License Plate
 - [ ] Breaks Replaced
 - [ ] Axle Boot Replaced
+- [ ] Charge Calculator ⏫ 
