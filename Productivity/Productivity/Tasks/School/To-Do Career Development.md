@@ -1,2 +1,2 @@
 # Career Development
-- [ ] Apply To An Internship🔁 every week 
+- [ ] Apply To 3 Internships 🔁 every week 

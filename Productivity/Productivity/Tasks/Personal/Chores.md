@@ -1,0 +1,3 @@
+- [ ] Laundry📅 2024-11-15 
+- [ ] Being Popcorn to CS Room
+- [ ] Go Shopping ⏫ 
