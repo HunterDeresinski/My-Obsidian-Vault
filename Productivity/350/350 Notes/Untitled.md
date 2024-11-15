@@ -1,1 +1,0 @@
-![[Untitled 2024-11-14 21.02.06.excalidraw]]

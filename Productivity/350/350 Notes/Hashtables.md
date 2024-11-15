@@ -204,5 +204,133 @@ std::vector<std::list<std::pair<std::string, double>>> h(10, {});
 
 To get a good runtime the goal is to try to keep the chains short because the runtime is the average length of chain.
 
-TO BE CONTINUED
+![[Hashtables 2024-11-15 11.20.10.excalidraw]]
 
+# :LiStackVertical:Heaps and Pri-Queue
+
+### For more information on linked lists :LiList:
+[[main-linkedlist.pdf]]
+
+## Linked Lists
+### Doubly Linked List
+
+![[Hashtables 2024-11-15 11.28.21.excalidraw]]
+
+
+## Heaps
+
+Heaps help improve priority queues using heaps.
+### 3 Famous Heaps
+
+#### 1. Binary Heap
+This tree is almost a BST. This is a **Minimum Heap**.
+![[Hashtables 2024-11-15 11.31.58.excalidraw]]
+
+The organization of the keys is such that all the holes are on the right. 
+There is a sense of ordering of the keys. But not the same as a BST.
+This is crucial.
+
+This is a **Max Heap**.
+![[Hashtables 2024-11-15 11.37.00.excalidraw]]
+
+This is what a max heap is. It is essentially the "opposite" of a min (minimum) heap.
+
+Think in terms of a tree but right the code according to an array.
+![[Hashtables 2024-11-15 11.39.00.excalidraw]]
+
+| i   | LEFT(i) | RIGHT(i) | PARENT(i) |
+| --- | ------- | -------- | --------- |
+| 0   |         |          |           |
+| 1   |         |          |           |
+| 2   |         |          |           |
+| 3   |         |          |           |
+| 4   |         |          |           |
+| 5   |         |          |           |
+| 6   |         |          |           |
+| 7   |         |          |           |
+| 8   |         |          |           |
+| 9   |         |          |           |
+Focusing on index 2 which would be 3 based on the array.
+![[Hashtables 2024-11-15 11.39.00.excalidraw]]
+
+| i   | LEFT(i) | RIGHT(i) | PARENT(i) |
+| --- | ------- | -------- | --------- |
+| 0   |         |          |           |
+| 1   |         |          |           |
+| 2   | 5       | 6        | 0         |
+| 3   |         |          |           |
+| 4   |         |          |           |
+| 5   |         |          |           |
+| 6   |         |          |           |
+| 7   |         |          |           |
+| 8   |         |          |           |
+| 9   |         |          |           |
+![[Hashtables 2024-11-15 11.39.00.excalidraw]]
+
+Focusing on index 6. (i = 6)
+
+| i   | LEFT(i) | RIGHT(i) | PARENT(i) |
+| --- | ------- | -------- | --------- |
+| 0   |         |          |           |
+| 1   |         |          |           |
+| 2   | 5       | 6        | 0         |
+| 3   |         |          |           |
+| 4   |         |          |           |
+| 5   |         |          |           |
+| 6   | 13      | 14       | 2         |
+| 7   |         |          |           |
+| 8   |         |          |           |
+| 9   |         |          |           |
+
+
+![[Hashtables 2024-11-15 11.39.00.excalidraw]]
+
+Focusing on index 3 (i = 3)
+
+| i   | LEFT(i) | RIGHT(i) | PARENT(i) |
+| --- | ------- | -------- | --------- |
+| 0   |         |          |           |
+| 1   |         |          |           |
+| 2   | 5       | 6        | 0         |
+| 3   | 7       | 8        | 1         |
+| 4   |         |          |           |
+| 5   |         |          |           |
+| 6   | 13      | 14       | 2         |
+| 7   |         |          |           |
+| 8   |         |          |           |
+| 9   |         |          |           |
+![[Hashtables 2024-11-15 11.39.00.excalidraw]]
+Focusing on index 4 (i = 4)
+
+| i   | LEFT(i) | RIGHT(i) | PARENT(i) |
+| --- | ------- | -------- | --------- |
+| 0   |         |          |           |
+| 1   |         |          |           |
+| 2   | 5       | 6        | 0         |
+| 3   | 7       | 8        | 1         |
+| 4   | 9       | 10       | 1         |
+| 5   |         |          |           |
+| 6   | 13      | 14       | 2         |
+| 7   |         |          |           |
+| 8   |         |          |           |
+| 9   |         |          |           |
+![[Hashtables 2024-11-15 11.39.00.excalidraw]]
+Focusing on index 5 (i = 5)
+
+| i   | LEFT(i) | RIGHT(i) | PARENT(i) |
+| --- | ------- | -------- | --------- |
+| 0   |         |          |           |
+| 1   |         |          |           |
+| 2   | 5       | 6        | 0         |
+| 3   | 7       | 8        | 1         |
+| 4   | 9       | 10       | 1         |
+| 5   |         |          | 2         |
+| 6   | 13      | 14       | 2         |
+| 7   |         |          |           |
+| 8   |         |          |           |
+| 9   |         |          |           |
+![[Hashtables 2024-11-15 11.46.52.excalidraw]]
+Now lets try to use this as a Priority Queue
+For more information.
+
+[[Heaps]]
