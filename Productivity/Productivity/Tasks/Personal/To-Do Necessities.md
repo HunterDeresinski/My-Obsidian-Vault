@@ -3,4 +3,4 @@
 - [ ] Renew License Plate ⏫
 - [ ] Breaks Replaced
 - [ ] Axle Boot Replaced
-- [ ] Charge Calculator ⏫ 
+- [x] Charge Calculator ⏫ ✅ 2024-11-15
